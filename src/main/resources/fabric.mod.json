@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "trigger",
+  "version": "${version}",
+
+  "name": "ForceBlockScaffold",
+  "description": "A mixin that makes a ghost block below you, allowing you to fly and bypass.",
+  "authors": [
+    "ItzOwo"
+  ],
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/ForceBlock/icon.png",
+
+  "environment": "client",
+  "entrypoints": {},
+  "mixins": [
+    "trigger.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "fabric-api": "*",
+    "minecraft": "~1.20.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "mo_glass": "*",
+    "shouldersurfing": "*",
+    "pehkui": "*"
+  },
+  "breaks": {
+    "wurst": "*"
+  }
+}
